@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+a {
+    color: #EF233C;
+}
+
+header, .education, footer {
+    padding: 30px;
+}
+
+header, footer {
+    color: #8D99AE;
+    background-color: #2B2D42;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+header h1, header h2{
+    color: white;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+.education {
+    color: black;
+    background-color: #8D99AE;
+}
