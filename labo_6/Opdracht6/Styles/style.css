@@ -1,0 +1,6 @@
+ul{
+    list-style-type: "☐ ";
+}
+.checked{
+    list-style-type: "☑ ";
+}
