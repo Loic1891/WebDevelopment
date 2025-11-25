@@ -1,68 +1,129 @@
-body{
-    margin:auto;
-    width: 95%;
-    font-family: Verdana, Helvetica, Arial;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.2em;
-    display: flex;
-    flex-wrap: wrap;
-
-
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-h1,h2{
-    color: #007e7e;
 
+#wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
 }
-h1{
+
+header p {
+    text-align: center;
+    margin: 0 0 10px;
+}
+#imgHeader {
+    max-width: 100%;
+    height: auto;
+}
+
+#elixirs {
+    float: right;
+    width: 25%;
+    margin-left: 1.5%;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+}
+
+#content {
+    float: left;
+    width: 70%;
+    margin: 0;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 15px 0;
+    color: #666;
+    font-size: 0.5em;
+}
+
+h1, h2 {
+    color: rgb(0,126,126);
+    margin: 0 0 0.5em;
+    line-height: 1.1;
+}
+
+h1 {
     font-size: 150%;
 }
-h2{
+h2 {
     font-size: 130%;
 }
-.rubriek{
-    color: red;
-    text-align: center;
-}
-footer{
-    font-size: 50%;
-}
-.hover :hover{
-    background-color: brown;
 
+#elixirs h1 {
+    color: #b34747;
+    font-size: 150%;
+    margin-top: 0;
 }
-.weekly{
-    text-align: center;
-    order: 1;
-    flex: 29%;
-    border-style: solid;
+#elixirs h2 {
+    color: #7a5ba0;
+    font-size: 130%;
 }
-header{
-    order: -1;
+
+
+#elixirs a {
+    color: inherit;
+    text-decoration: underline;
+    transition: background 0.15s ease;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
-#guarantee{
+#elixirs a:hover,
+#elixirs a:focus {
+    background: #8b4513;
+    color: #fff;
+    text-decoration: none;
+}
+
+.color {
     margin: 30px;
     padding: 20px;
-    color: #444444;
-    background-color: #a7cece;
-    border-style: dotted;
-    border-color: white;
-    display: flex;
-    flex-wrap: wrap;
-}
-.origin{
-    flex: 70%;
-}
-footer{
-    order: 99;
-}
-.star{
-
-    order: 1;
-    flex: 10%;
-
-}
-.startext{
-    order: 2;
-    flex: 90%;
+    color: rgb(68,68,68);
+    background: #a7cece;
+    border: 2px dotted #ffffff;
     font-style: italic;
+    font-weight: 700;
+    border-radius: 4px;
+}
 
+.color p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.cd {
+    font-style: italic;
+}
+.artist {
+    font-weight: bold;
+}
+
+article {
+    margin-bottom: 20px;
+}
+article p {
+    margin: 0 0 1em 0;
+    line-height: 1.5;
+}
+
+#elixirs img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px;
 }
