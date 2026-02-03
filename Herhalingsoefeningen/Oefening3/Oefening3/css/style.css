@@ -1,0 +1,202 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+* {
+    margin: 0;
+    font-family: helvetic, Arial, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase; /*Zet de tekst in uppercase*/
+    font-size: 2.5em;
+    border-bottom: 2px solid;
+    color: black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+ul {
+    border-top: 1px #ebe8e8 solid;
+}
+
+#logo img{
+    height: 50px;
+    width: auto;
+}
+
+header {
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+header nav ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px 0 10px 0;
+    list-style-type: none; /*zorgt ervoor dat de list items geen puntje of vierkantje ervoor krijgen*/
+}
+
+header li {
+    padding: 10px 15px 10px;
+    border-right: 1px solid #ebe8e8;
+    text-transform: uppercase;
+    color: #5b4746;
+    font-size: 16px;
+}
+
+header li:hover {
+    border-bottom: 2px #fff100 solid;
+}
+
+header li:last-child {
+    border-right: none;  /*Verwijderd het laatste verticale lijntje bij de nav*/
+}
+
+.mainheader {
+    background-image: url("../Beginsituatie Kitchn/headerimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px #8D99AE;
+
+    display:flex; /*display flex zodat we het element kunnen centreren over de achtergrond*/
+    justify-content: center; /*centreren over de main axis*/
+    align-items: center; /*Centreren over de cross axis*/
+}
+
+main {
+    border-top: 1px #ebe8e8 solid;
+}
+
+section {
+    margin: 50px auto; /*Centreerd de section en zet 50 pixels margin aan de bovenkant*/
+    width: 600px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /*15px witruimte tussen  grid elementen*/
+}
+
+article {
+    margin-right: 1.5em;
+    padding-top: 1em;
+    border-top: 1px #ddd solid;
+}
+
+.small-title {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #ff4d56;
+    letter-spacing: 1px; /*Zorgt voor een spacing van 1px tussen de letters*/
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-Body {
+    color: #666;
+    line-height: 2;
+}
+
+.item-Auteur {
+    padding-right: 10px;
+    border-right: 1px #ebe8e8 solid;
+    font-style: italic;
+}
+
+.item-Timestamp {
+    color: #666;
+    padding-left: 10px;
+}
+
+.main-recipe {
+    display:flex;
+    justify-content: left;
+
+}
+
+.recommended {
+    margin: 50px auto;
+    width: 600px;
+}
+
+.recommended img {
+    padding-bottom: 25px;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px #ebe8e8 solid;
+}
+
+#left {
+    line-height: 2em;
+    padding-top: 20px;
+    width: 50%;
+    float:left;
+    text-align: right; /*zorgt ervoor dat de tekst rechts komt te staan in het blok*/
+    padding-right: 10px;
+}
+
+#right {
+    line-height: 2em;
+    padding-top: 20px;
+    width: 50%;
+    float: right;
+    text-align: left; /*zorgt ervoor dat de tekst links komt te staan in het blok*/
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
+
+@media (min-width: 770px)
+{
+    header {
+        width: 750px;
+    }
+    section {
+        width: 750px;
+    }
+    .recommended {
+        width: 750px;
+    }
+}
+
+@media (min-width: 800px)
+{
+    .mainheader {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    header {
+        width: 980px;
+    }
+    section {
+        width: 980px;
+    }
+    .recommended {
+        width: 980px;
+    }
+}

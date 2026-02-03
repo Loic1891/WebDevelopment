@@ -1,0 +1,64 @@
+/* Achtergrondafbeelding */
+body {
+    background-image: url("../images/img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.calculator {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+/* Inputvelden */
+input[type="number"] {
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Knoppen */
+input[type="button"] {
+    padding: 10px 18px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0078ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+input[type="button"]:hover {
+    background-color: #005fcc;
+}
+
+input[type="button"]:active {
+    transform: scale(0.95);
+}
+
+/* Output */
+#txtOutput {
+    display: block;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
