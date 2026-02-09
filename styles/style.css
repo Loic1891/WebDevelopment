@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.semester h2 {
+    margin-top: 0;
+    border-left: 5px solid #0077ff;
+    padding-left: 10px;
+}
+
+.semester ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.semester li {
+    margin: 4px 0;
+}
+
+.semester a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.semester a:hover {
+    text-decoration: underline;
+}
