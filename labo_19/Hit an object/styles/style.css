@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 8px;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+#start,
+#dismiss-btn {
+    background: #2b7fff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#playField {
+    flex: 1;
+    position: relative;
+    background: #f5f5f5;
+}
+
+#target {
+    position: absolute;
+    cursor: pointer;
+}
+
+.win-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.win-modal.show {
+    display: flex;
+}
+
+.win-modal-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+}

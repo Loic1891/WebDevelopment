@@ -1,0 +1,17 @@
+#game {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
