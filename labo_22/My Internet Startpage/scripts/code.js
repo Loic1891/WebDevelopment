@@ -85,7 +85,7 @@ class StartPage {
     parseCommando(input) {
         if (!input.startsWith("/")) {
             this.resetInput();
-            alert('Invalid command — start your command with /[character]');
+            alert('Invalid command');
             throw new Error("Invalid command");
         }
 
