@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Botsmatic';
+    src: url('../assets/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+img,
+canvas {
+    image-rendering: pixelated;
+    -webkit-image-rendering: pixelated;
+    -moz-image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: auto;
+}
+
+#ui {
+    font-family: 'Botsmatic', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    text-shadow: 0.25vw 0.25vw 0 rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 8vw;
+    font-weight: 500;
+}
+
+#score {
+    font-size: 12vw;
+    font-weight: 400;
+    margin-top: 2vh;
+    color: #FFF;
+    text-shadow: 0.25vw 0.25vw 0 rgba(0, 0, 0, 0.7);
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4vh;
+    border-radius: 1vh;
+    font-size: 3vh;
+}
+
+#game-over p {
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+
+#game-over img {
+    width: 50vw;
+    max-width: 200px;
+}
+
+#start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5vh;
+    border-radius: 2vh;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.image-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.play-img {
+    width: 20vw;
+    max-width: 200px;
+    transition: transform 0.1s ease;
+    z-index: 1;
+}
+
+#pause {
+    font-size: 10em;
+}
+
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0.5vw;
+    left: 0.5vw;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/playbtn.png') no-repeat center center;
+    filter: brightness(0%) opacity(0.7);
+    background-size: contain;
+    z-index: -1;
+}
+
+.play-img:hover {
+    transform: translate(-0.2vw, -0.2vw);
+}
+
+#start-screen,
+#game-over {
+    pointer-events: auto;
+}
+
+#pause-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 3em;
+    /* Decent size for the pause button */
+    cursor: pointer;
+    z-index: 20;
+    pointer-events: auto;
+}
